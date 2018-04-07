@@ -4,10 +4,9 @@ cmake_minimum_required(VERSION 3.5)
 # https://cmake.org/Wiki/CMake_Useful_Variables
 
 if (WIN32)
-    execute_process(COMMAND bash ./build/linux/Makefile)
+    execute_process(COMMAND bash ./make/linux/Makefile)
 endif (WIN32)
 
 if (UNIX)
-    execute_process(COMMAND bash ./build/win32/Makefile)
+    execute_process(COMMAND bash ./make/win32/Makefile)
 endif (UNIX)
-
